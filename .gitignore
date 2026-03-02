@@ -1,0 +1,15 @@
+# runtime artifacts
+**/libs/
+**/*.jar
+**/status.json
+**/result.json
+**/run.log
+**/kotlinc_args*.txt
+**/*.pid
+
+# python
+__pycache__/
+*.pyc
+
+# local secrets
+**/payload.local.json

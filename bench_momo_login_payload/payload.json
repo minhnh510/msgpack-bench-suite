@@ -1,0 +1,33 @@
+{
+  "appVer": 50500,
+  "delayTime": 0,
+  "channel": "APP",
+  "extra": {
+    "DEVICE_TOKEN": "<REDACTED_DEVICE_TOKEN>",
+    "isNFCAvailable": true,
+    "checkSum": "<REDACTED_checkSum>",
+    "publicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAvuplINCXYNttm1/XVxAGHSv0knapE9x4lxGFmcoieHk9HHEdSHvUa9ZU4O+sDtpcOnD9c5Jwk1HqZa8bder1AufAH70rqBypM0EKMQz4LEDBijdVdLba0gXjaFmtzB/P2DiwOAA8JDCoWHuAq780MtAU2TQuEQoDeToaE9ibmIEHxl0eTYt1yWxdp3dH7Ai9p6v0gNj4cYE6LxZkrHt0L0Py8KsqbEbucEMG5CMkz0/LKmgmgGsQcVCGjabW5WAo3E9ePVPNXJRRb2f5UVYqAaIy6WB88AfZ8TB0dHJaBmE8UTuaVWHCdYKtYMefPl8lFtY0KulVEGG8LFZaOmby3QIDAQAB",
+    "pHash": "<REDACTED_pHash>",
+    "IDFA": "<REDACTED_IDFA>",
+    "SIMULATOR": false,
+    "TOKEN": "<REDACTED_TOKEN>",
+    "ONESIGNAL_TOKEN": "<REDACTED_ONESIGNAL_TOKEN>",
+    "SECUREID": "<REDACTED_SECUREID>",
+    "MODELID": "<REDACTED_MODELID>"
+  },
+  "lang": "vi",
+  "pass": "<REDACTED_PASS>",
+  "msgType": "USER_LOGIN_MSG",
+  "appId": "vn.momo.platform",
+  "appCode": "5.5.0",
+  "deviceName": "iPhone 14 Pro Max",
+  "user": "<REDACTED_USER>",
+  "deviceOS": "ios",
+  "buildNumber": 0,
+  "time": 1770794525254,
+  "momoMsg": {
+    "_class": "mservice.backend.entity.msg.LoginMsg",
+    "isSetup": false
+  },
+  "cmdId": "1770794525254000000"
+}
