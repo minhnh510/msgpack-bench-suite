@@ -1,0 +1,29 @@
+{
+  "ok": true,
+  "benchmark": {
+    "base_url": "http://127.0.0.1:18991",
+    "loops": 1500,
+    "json_size": 1536,
+    "msgpack_size": 1423,
+    "saving_pct": 7.357,
+    "json": {
+      "loops": 1500,
+      "mean_ms": 0.336,
+      "p50_ms": 0.312,
+      "p95_ms": 0.543,
+      "p99_ms": 0.685,
+      "rps_est": 2980.486
+    },
+    "msgpack": {
+      "loops": 1500,
+      "mean_ms": 0.266,
+      "p50_ms": 0.254,
+      "p95_ms": 0.368,
+      "p99_ms": 0.437,
+      "rps_est": 3763.185
+    },
+    "latency_gain_pct": 20.833,
+    "rps_gain_pct": 26.261
+  },
+  "finished_at": "02-03-2026 14:51:51 GMT+7"
+}

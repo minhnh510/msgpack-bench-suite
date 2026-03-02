@@ -1,0 +1,36 @@
+{
+  "scenario": "momo_login_payload_json_vs_msgpack",
+  "runs": [
+    {
+      "run": 1,
+      "saving_pct": 7.357,
+      "json_mean_ms": 0.336,
+      "msgpack_mean_ms": 0.266,
+      "latency_gain_pct": 20.833,
+      "rps_gain_pct": 26.261
+    },
+    {
+      "run": 2,
+      "saving_pct": 7.357,
+      "json_mean_ms": 0.312,
+      "msgpack_mean_ms": 0.251,
+      "latency_gain_pct": 19.551,
+      "rps_gain_pct": 24.024
+    },
+    {
+      "run": 3,
+      "saving_pct": 7.357,
+      "json_mean_ms": 0.297,
+      "msgpack_mean_ms": 0.284,
+      "latency_gain_pct": 4.377,
+      "rps_gain_pct": 4.534
+    }
+  ],
+  "average": {
+    "saving_pct_avg": 7.357,
+    "json_mean_ms_avg": 0.315,
+    "msgpack_mean_ms_avg": 0.267,
+    "latency_gain_pct_avg": 14.92,
+    "rps_gain_pct_avg": 18.273
+  }
+}

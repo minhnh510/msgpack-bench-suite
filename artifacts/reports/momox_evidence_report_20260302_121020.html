@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>MoMoX Evidence Report</title>
+<style>
+body{font-family:Inter,Segoe UI,Arial,sans-serif;margin:0;background:#0b1220;color:#e9f1ff}
+.wrap{max-width:1100px;margin:0 auto;padding:18px}
+.card{background:#111b31;border:1px solid #2f4578;border-radius:12px;padding:16px;margin-bottom:14px}
+h1{font-size:22px;margin:0 0 6px 0} h2{font-size:18px;margin:0 0 10px 0} h3{font-size:15px;margin:14px 0 8px}
+.sub{color:#9bb0d8;font-size:13px}
+table{width:100%;border-collapse:collapse;font-size:13px;margin:8px 0 12px}
+th,td{border-bottom:1px solid #2a3f6f;padding:8px;text-align:left;vertical-align:top}
+th{color:#9bb0d8;background:#0f1930}
+code{background:#0d1730;border:1px solid #2a3f6f;padding:1px 5px;border-radius:6px;color:#cde0ff}
+.note{color:#a9bce0;font-size:13px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="card">
+    <h1>MoMoX Evidence Report</h1>
+    <div class="sub">Generated at: 02-03-2026 12:10:20 GMT+7</div>
+    <div class="sub">Mục tiêu: xuất chứng cứ thực nghiệm cho benchmark MessagePack và tiến độ deep tune.</div>
+  </div>
+  <div class="card"><section>
+<h2>1) Benchmark thực tế: Kotlin Client + Python Server + Lua Script</h2>
+<p><b>Generated:</b> 02-03-2026 12:00:38 GMT+7</p>
+<p><b>Stack:</b> Kotlin client (JVM), Python aiohttp server, Lua transform (lupa), JSON vs MessagePack decode end-to-end.</p>
+<h3>Static payload (không tính Lua per request)</h3>
+<table>
+<tr><th>Metric</th><th>JSON</th><th>MessagePack</th><th>Delta</th></tr>
+<tr><td>Payload size (bytes)</td><td>287479</td><td>208420</td><td>27.501% smaller</td></tr>
+<tr><td>Mean latency (ms)</td><td>4.106</td><td>2.909</td><td>29.152% faster</td></tr>
+<tr><td>P95 latency (ms)</td><td>4.628</td><td>3.231</td><td>-</td></tr>
+<tr><td>P99 latency (ms)</td><td>18.997</td><td>3.839</td><td>-</td></tr>
+<tr><td>Estimated RPS</td><td>243.523</td><td>343.71</td><td>41.141% gain</td></tr>
+<tr><td>Loops</td><td colspan='3'>300</td></tr>
+</table>
+<h3>Lua dynamic payload (server chạy Lua mỗi request)</h3>
+<table>
+<tr><th>Metric</th><th>JSON</th><th>MessagePack</th><th>Delta</th></tr>
+<tr><td>Payload size (bytes)</td><td>287479</td><td>208420</td><td>27.501% smaller</td></tr>
+<tr><td>Mean latency (ms)</td><td>11.6</td><td>7.351</td><td>36.629% faster</td></tr>
+<tr><td>P95 latency (ms)</td><td>12.46</td><td>7.891</td><td>-</td></tr>
+<tr><td>P99 latency (ms)</td><td>24.521</td><td>8.475</td><td>-</td></tr>
+<tr><td>Estimated RPS</td><td>86.21</td><td>136.034</td><td>57.794% gain</td></tr>
+<tr><td>Loops</td><td colspan='3'>300</td></tr>
+</table>
+<p class='note'><b>Kết luận:</b> MessagePack giảm bandwidth đáng kể và cải thiện latency/RPS rõ rệt, đặc biệt trên luồng dynamic có Lua.</p>
+<p class='note'>Nguồn dữ liệu: <code>C:\Users\NHM\openclaw-workspace\runtime\research\msgpack_stack_kotlin_python_lua\result.json</code></p>
+</section><section>
+<h2>2) XAU News-safe Deep Tune v3 (Snapshot)</h2>
+<table>
+<tr><th>Field</th><th>Value</th></tr>
+<tr><td>Stage</td><td>running</td></tr>
+<tr><td>Tested / Total</td><td>24 / 160</td></tr>
+<tr><td>Updated at</td><td>02-03-2026 12:08:37 GMT+7</td></tr>
+<tr><td>Best Net</td><td>7.562485999999996</td></tr>
+<tr><td>Best PF</td><td>1.1866934119926489</td></tr>
+<tr><td>Best DD</td><td>0.019908736324952075</td></tr>
+<tr><td>Current Net</td><td>10.987592999999999</td></tr>
+<tr><td>Current PF</td><td>1.966885156663109</td></tr>
+</table>
+<p class='note'>Status file: <code>C:\Users\NHM\openclaw-workspace\runtime\research\xau_news_safe_deep_tune_v3_status.json</code></p>
+</section></div>
+</div>
+</body>
+</html>
