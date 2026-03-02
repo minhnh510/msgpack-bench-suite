@@ -1,0 +1,68 @@
+{
+  "ok": true,
+  "benchmark": {
+    "base_url": "http://127.0.0.1:18990",
+    "loops": 300,
+    "static": {
+      "json_size": 287479,
+      "msgpack_size": 208420,
+      "saving_pct": 27.501,
+      "json": {
+        "loops": 300,
+        "mean_ms": 4.106,
+        "p50_ms": 3.474,
+        "p95_ms": 4.628,
+        "p99_ms": 18.997,
+        "rps_est": 243.523
+      },
+      "msgpack": {
+        "loops": 300,
+        "mean_ms": 2.909,
+        "p50_ms": 2.867,
+        "p95_ms": 3.231,
+        "p99_ms": 3.839,
+        "rps_est": 343.71
+      },
+      "latency_gain_pct": 29.152,
+      "rps_gain_pct": 41.141
+    },
+    "lua_dynamic": {
+      "json_size": 287479,
+      "msgpack_size": 208420,
+      "saving_pct": 27.501,
+      "json": {
+        "loops": 300,
+        "mean_ms": 11.6,
+        "p50_ms": 11.095,
+        "p95_ms": 12.46,
+        "p99_ms": 24.521,
+        "rps_est": 86.21
+      },
+      "msgpack": {
+        "loops": 300,
+        "mean_ms": 7.351,
+        "p50_ms": 7.273,
+        "p95_ms": 7.891,
+        "p99_ms": 8.475,
+        "rps_est": 136.034
+      },
+      "latency_gain_pct": 36.629,
+      "rps_gain_pct": 57.794
+    }
+  },
+  "paths": {
+    "root": "C:\\Users\\NHM\\openclaw-workspace\\runtime\\research\\msgpack_stack_kotlin_python_lua",
+    "libs": [
+      "C:\\Users\\NHM\\openclaw-workspace\\runtime\\research\\msgpack_stack_kotlin_python_lua\\libs\\jackson-annotations-2.17.2.jar",
+      "C:\\Users\\NHM\\openclaw-workspace\\runtime\\research\\msgpack_stack_kotlin_python_lua\\libs\\jackson-core-2.17.2.jar",
+      "C:\\Users\\NHM\\openclaw-workspace\\runtime\\research\\msgpack_stack_kotlin_python_lua\\libs\\jackson-databind-2.17.2.jar",
+      "C:\\Users\\NHM\\openclaw-workspace\\runtime\\research\\msgpack_stack_kotlin_python_lua\\libs\\jackson-dataformat-msgpack-0.9.8.jar",
+      "C:\\Users\\NHM\\openclaw-workspace\\runtime\\research\\msgpack_stack_kotlin_python_lua\\libs\\msgpack-core-0.9.8.jar"
+    ],
+    "server": "C:\\Users\\NHM\\openclaw-workspace\\runtime\\research\\msgpack_stack_kotlin_python_lua\\server.py",
+    "kotlin": "C:\\Users\\NHM\\openclaw-workspace\\runtime\\research\\msgpack_stack_kotlin_python_lua\\BenchmarkClient.kt",
+    "argfile": "C:\\Users\\NHM\\openclaw-workspace\\runtime\\research\\msgpack_stack_kotlin_python_lua\\kotlinc_args.txt",
+    "outjar": "C:\\Users\\NHM\\openclaw-workspace\\runtime\\research\\msgpack_stack_kotlin_python_lua\\benchmark-client.jar"
+  },
+  "finished_at": "02-03-2026 12:00:38 GMT+7"
+}

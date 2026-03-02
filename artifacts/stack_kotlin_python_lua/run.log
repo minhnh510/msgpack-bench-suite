@@ -1,0 +1,8 @@
+[2026-03-02T12:00:23.218621] START
+[2026-03-02T12:00:23.219623] downloaded jackson-core-2.17.2.jar
+[2026-03-02T12:00:23.220683] downloaded jackson-databind-2.17.2.jar
+[2026-03-02T12:00:23.221282] downloaded jackson-annotations-2.17.2.jar
+[2026-03-02T12:00:23.221282] downloaded jackson-dataformat-msgpack-0.9.8.jar
+[2026-03-02T12:00:23.222294] downloaded msgpack-core-0.9.8.jar
+[2026-03-02T12:00:23.227116] server pid=2408
+[2026-03-02T12:00:38.465688] DONE
